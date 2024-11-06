@@ -122,7 +122,7 @@ async function submitForm(event) {
     });
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/submit", {
+        const response = await fetch("https://aroma-back.onrender.com/submit", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
