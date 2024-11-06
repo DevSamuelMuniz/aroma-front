@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Essence</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <form id ="surveyForm" onsubmit="submitForm(event)"><br>
+
+            <section class="box">
+                <img class="logo" src="./assets/logo.svg" alt="logo Aroma Essence">
+                    <div class="flex-column">
+                        <label class="label-login" for="">Nome</label>
+                        <input type="text" placeholder="Nome completo">
+                    </div>
+                    <div class="flex-column mt-1">
+                        <label class="label-login" for="">Email</label>
+                        <input type="email" placeholder="Email@email.com">
+                    </div>
+            </section>
+
+            <!-- Estilo de Vida -->
+            <h2>Estilo de Vida</h2><br>
+            <div class="question-box">
+                <h3>Qual é a sua rotina diária?</h3><br>
+                <input type="radio" name="routine" id="sedentaria" value="1" onclick="calculatePoints()">
+                <label for="sedentaria">Sedentária</label><br>
+                <input type="radio" name="routine" id="ativa" value="2" onclick="calculatePoints()">
+                <label for="ativa">Ativa</label><br>
+                <input type="radio" name="routine" id="muito_ativa" value="3" onclick="calculatePoints()">
+                <label for="muito_ativa">Muito Ativa</label>
+            </div>
+            <div class="question-box">
+                <h3>Com que frequência você pratica atividades físicas?</h3><br>
+                <input type="radio" name="exercise" id="nunca" value="0" onclick="calculatePoints()">
+                <label for="nunca">Nunca</label><br>
+                <input type="radio" name="exercise" id="ocasionalmente" value="1" onclick="calculatePoints()">
+                <label for="ocasionalmente">Ocasionalmente</label><br>
+                <input type="radio" name="exercise" id="regularmente" value="2" onclick="calculatePoints()">
+                <label for="regularmente">Regularmente</label><br>
+                <input type="radio" name="exercise" id="diariamente" value="3" onclick="calculatePoints()">
+                <label for="diariamente">Diariamente</label>
+            </div>
+            <div class="question-box">
+                <h3>Quantas horas de sono você costuma ter por noite?</h3><br>
+                <input type="radio" name="sleep" id="menos_5_horas" value="0" onclick="calculatePoints()">
+                <label for="menos_5_horas">Menos de 5 horas</label><br>
+                <input type="radio" name="sleep" id="5_a_7_horas" value="1" onclick="calculatePoints()">
+                <label for="5_a_7_horas">5 a 7 horas</label><br>
+                <input type="radio" name="sleep" id="7_a_9_horas" value="2" onclick="calculatePoints()">
+                <label for="7_a_9_horas">7 a 9 horas</label><br>
+                <input type="radio" name="sleep" id="mais_9_horas" value="3" onclick="calculatePoints()">
+                <label for="mais_9_horas">Mais de 9 horas</label>
+            </div>
+            <div class="question-box">
+                <h3>Você trabalha em um ambiente estressante?</h3><br>
+                <input type="radio" name="stressEnv" id="sim_estressante" value="0" onclick="calculatePoints()">
+                <label for="sim_estressante">Sim</label><br>
+                <input type="radio" name="stressEnv" id="nao_estressante" value="1" onclick="calculatePoints()">
+                <label for="nao_estressante">Não</label><br>
+            </div>
+
+            <!-- Necessidades de Saúde -->
+            <h2>Necessidades de Saúde</h2><br>
+            <div class="question-box">
+                <h3>Você tem alguma condição de saúde crônica?</h3><br>
+                <input type="radio" name="healthCondition" id="nenhuma_condicao" value="2" onclick="calculatePoints()">
+                <label for="nenhuma_condicao">Nenhuma</label><br>
+                <input type="radio" name="healthCondition" id="uma_condicao" value="1" onclick="calculatePoints()">
+                <label for="uma_condicao">Uma condição</label><br>
+                <input type="radio" name="healthCondition" id="mais_uma_condicao" value="0" onclick="calculatePoints()">
+                <label for="mais_uma_condicao">Mais de uma condição</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Você sofre de dores frequentes?</h3><br>
+                <input type="radio" name="pain" id="nenhuma_dor" value="2" onclick="calculatePoints()">
+                <label for="nenhuma_dor">Nenhuma</label><br>
+                <input type="radio" name="pain" id="dores_cabeca" value="1" onclick="calculatePoints()">
+                <label for="dores_cabeca">Dores de cabeça</label><br>
+                <input type="radio" name="pain" id="dores_musculares" value="1" onclick="calculatePoints()">
+                <label for="dores_musculares">Dores musculares</label><br>
+                <input type="radio" name="pain" id="outras_dores" value="1" onclick="calculatePoints()">
+                <label for="outras_dores">Outras dores</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Como você descreveria seu nível de estresse?</h3><br>
+                <input type="radio" name="stressLevel" id="nivel_baixo" value="3" onclick="calculatePoints()">
+                <label for="nivel_baixo">Baixo</label><br>
+                <input type="radio" name="stressLevel" id="nivel_moderado" value="2" onclick="calculatePoints()">
+                <label for="nivel_moderado">Moderado</label><br>
+                <input type="radio" name="stressLevel" id="nivel_alto" value="1" onclick="calculatePoints()">
+                <label for="nivel_alto">Alto</label><br>
+                <input type="radio" name="stressLevel" id="nivel_muito_alto" value="0" onclick="calculatePoints()">
+                <label for="nivel_muito_alto">Muito alto</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Você tem problemas para dormir?</h3><br>
+                <input type="radio" name="sleepProblems" id="sim_problemas" value="0" onclick="calculatePoints()">
+                <label for="sim_problemas">Sim</label><br>
+                <input type="radio" name="sleepProblems" id="nao_problemas" value="1" onclick="calculatePoints()">
+                <label for="nao_problemas">Não</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Você costuma se sentir cansado durante o dia?</h3><br>
+                <input type="radio" name="tired" id="sim_cansado" value="0" onclick="calculatePoints()">
+                <label for="sim_cansado">Sim</label><br>
+                <input type="radio" name="tired" id="nao_cansado" value="1" onclick="calculatePoints()">
+                <label for="nao_cansado">Não</label><br>
+            </div>
+          
+
+            <!-- Preferências Pessoais -->
+            <h2>Preferências Pessoais</h2><br>
+            <div class="question-box">
+                <h3>Você prefere aromas cítricos, florais, herbais ou amadeirados?</h3><br>
+                <input type="radio" name="aromaPreference" id="citrico" value="citricaFlorais" onclick="calculatePoints()">
+                <label for="citrico">Cítricos</label><br>
+                <input type="radio" name="aromaPreference" id="florais" value="citricaFlorais" onclick="calculatePoints()">
+                <label for="florais">Florais</label><br>
+                <input type="radio" name="aromaPreference" id="herbais" value="herbaisAmadeiradas" onclick="calculatePoints()">
+                <label for="herbais">Herbais</label><br>
+                <input type="radio" name="aromaPreference" id="amadeirados" value="herbaisAmadeiradas" onclick="calculatePoints()">
+                <label for="amadeirados">Amadeirados</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Algum aroma específico te incomoda?</h3><br>
+                <input type="radio" name="aromaBother" id="menta" value="1" onclick="calculatePoints()">
+                <label for="menta">Menta</label><br>
+                <input type="radio" name="aromaBother" id="lavanda" value="1" onclick="calculatePoints()">
+                <label for="lavanda">Lavanda</label><br>
+                <input type="radio" name="aromaBother" id="nenhum" value="0" onclick="calculatePoints()">
+                <label for="nenhum">Nenhum</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Você gosta de difusores, óleos de massagem ou sprays de ambiente?</h3><br>
+                <input type="radio" name="usePreference" id="difusores" value="1" onclick="calculatePoints()">
+                <label for="difusores">Difusores</label><br>
+                <input type="radio" name="usePreference" id="oleos_massagem" value="1" onclick="calculatePoints()">
+                <label for="oleos_massagem">Óleos de massagem</label><br>
+                <input type="radio" name="usePreference" id="sprays_ambiente" value="1" onclick="calculatePoints()">
+                <label for="sprays_ambiente">Sprays de ambiente</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Qual é o seu objetivo principal ao usar óleos essenciais?</h3><br>
+                <input type="radio" name="goal" id="melhorarHumor" value="melhorarHumor" onclick="calculatePoints()">
+                <label for="melhorarHumor">Melhorar o Humor</label><br>
+                <input type="radio" name="goal" id="reduzirEstresse" value="reduzirEstresse" onclick="calculatePoints()">
+                <label for="reduzirEstresse">Reduzir o Estresse</label><br>
+                <input type="radio" name="goal" id="aumentarEnergia" value="aumentarEnergia" onclick="calculatePoints()">
+                <label for="aumentarEnergia">Aumentar a Energia</label><br>
+                <input type="radio" name="goal" id="melhorarSono" value="melhorarSono" onclick="calculatePoints()">
+                <label for="melhorarSono">Melhorar o Sono</label><br>
+                <input type="radio" name="goal" id="alivioDores" value="alivioDores" onclick="calculatePoints()">
+                <label for="alivioDores">Alívio de Dores</label><br>
+                <input type="radio" name="goal" id="concentracaoFoco" value="concentracaoFoco" onclick="calculatePoints()">
+                <label for="concentracaoFoco">Concentração e Foco</label><br>
+            </div>
+
+            <!-- Informações Adicionais -->
+            <h2>Informações Adicionais</h2><br>
+            <div class="question-box">
+                <h3>Você já usou óleos essenciais antes?</h3><br>
+                <input type="radio" name="usedOils" id="sim_uso" value="1" onclick="calculatePoints()">
+                <label for="sim_uso">Sim</label><br>
+                <input type="radio" name="usedOils" id="nao_uso" value="0" onclick="calculatePoints()">
+                <label for="nao_uso">Não</label><br>
+            </div>
+            <div class="question-box">
+                <h3>Se sim, quais foram os seus favoritos?</h3><br>
+                <input type="text" name="favoriteOils" rows="3" cols="40"><br>
+            </div>
+            <div class="question-box">
+                <h3>Você tem animais de estimação em casa?</h3><br>
+                <input type="radio" name="petsAtHome" id="sim_animais" value="0" onclick="calculatePoints()">
+                <label for="sim_animais">Sim</label><br>
+                <input type="radio" name="petsAtHome" id="nao_animais" value="1" onclick="calculatePoints()">
+                <label for="nao_animais">Não</label><br>
+            </div>
+            <h3 style="display: none;">Total de Pontos: <span id="totalPoints">0</span></h3>
+
+            <button type="submit">Gerar Recomendação</button>
+
+
+        <!-- Elemento para exibir a recomendação -->
+        <h3 style="display: none;">Recomendação: <span id="recommendation"></span></h3>
+        </form>
+
+        <script src = "script.js"></script>
+    </main>
+</body>
+</html>
