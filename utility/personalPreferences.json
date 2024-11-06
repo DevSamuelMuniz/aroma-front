@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "question": "Você prefere aromas cítricos, florais, herbais ou amadeirados? ",
+        "options": [
+            {
+                "aswer": "Cítricos",
+                "point": 1
+            },
+            {
+                "aswer": "Florais",
+                "point": 1
+            },
+            {
+                "aswer": "Herbais",
+                "point": 1
+            },
+            {
+                "aswer": "Amadeirados",
+                "point": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Algum aroma específico te incomoda?",
+        "options": [
+            {
+                "aswer": "Menta",
+                "point": 1
+            },
+            {
+                "aswer": "Lavanda",
+                "point": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Você gosta de difusores, óleos de massagem ou sprays de ambiente?",
+        "options": [
+            {
+                "aswer": "Difusores",
+                "point": 1
+            },
+            {
+                "aswer": "Óleos de massagem",
+                "point": 1
+            },
+            {
+                "aswer": "Sprays de ambiente",
+                "point": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Qual é o seu objetivo principal ao usar óleos essenciais?",
+        "options": [
+            {
+                "aswer": "Melhorar o humor",
+                "point": 1
+            },
+            {
+                "aswer": "Reduzir o estresse",
+                "point": 1
+            },
+            {
+                "aswer": "Aumentar a energia",
+                "point": 1
+            },
+            {
+                "aswer": "Melhorar a concentração",
+                "point": 1
+            }
+        ]
+    }
+]

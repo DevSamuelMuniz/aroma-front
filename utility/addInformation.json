@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "question": "Você já usou óleos essenciais antes? ",
+        "options": [
+            {
+                "aswer": "Sim",
+                "point": 1
+            },
+            {
+                "aswer": "Não",
+                "point": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Se sim, quais foram os seus favoritos?"
+    },
+    {
+        "id": 1,
+        "question": "Você tem animais de estimação em casa?",
+        "options": [
+            {
+                "aswer": "Sim",
+                "point": 0
+            },
+            {
+                "aswer": "Não",
+                "point": 1
+            }
+        ]
+    }
+]

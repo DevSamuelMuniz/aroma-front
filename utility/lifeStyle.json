@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "question": "Qual é a sua rotina diária?",
+        "options": [
+            {
+                "aswer": "Sedentária",
+                "point": 1
+            },
+            {
+                "aswer": "Ativa",
+                "point": 2
+            },
+            {
+                "aswer": "Muito ativa",
+                "point": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Com que frequência você pratica atividades físicas?",
+        "options": [
+            {
+                "aswer": "Nunca",
+                "point": 0
+            },
+            {
+                "aswer": "Ocasionalmente",
+                "point": 1
+            },
+            {
+                "aswer": "Regularmente",
+                "point": 2
+            },
+            {
+                "aswer": "Diariamente",
+                "point": 3
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Quantas horas de sono você costuma ter por noite?",
+        "options": [
+            {
+                "aswer": "Menos de 5 horas",
+                "point": 0
+            },
+            {
+                "aswer": "5 a 7 horas",
+                "point": 1
+            },
+            {
+                "aswer": "7 a 9 horas",
+                "point": 2
+            },
+            {
+                "aswer": "Mais de 9 horas",
+                "point": 3
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Você trabalha em um ambiente estressante?",
+        "options": [
+            {
+                "aswer": "Sim",
+                "point": 0
+            },
+            {
+                "aswer": "Não",
+                "point": 1
+            }
+        ]
+    }
+]

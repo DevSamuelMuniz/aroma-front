@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "question": "Você tem alguma condição de saúde crônica?",
+        "options": [
+            {
+                "aswer": "Nenhuma",
+                "point": 2
+            },
+            {
+                "aswer": "Uma condição",
+                "point": 1
+            },
+            {
+                "aswer": "Mais de uma condição",
+                "point": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Você sofre de dores frequentes?",
+        "options": [
+            {
+                "aswer": "Nenhuma",
+                "point": 2
+            },
+            {
+                "aswer": "Dores de cabeça",
+                "point": 1
+            },
+            {
+                "aswer": "Dores musculares",
+                "point": 1
+            },
+            {
+                "aswer": "Outras",
+                "point": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Como você descreveria seu nível de estresse?",
+        "options": [
+            {
+                "aswer": "Baixo",
+                "point": 3
+            },
+            {
+                "aswer": "Moderado",
+                "point": 2
+            },
+            {
+                "aswer": "Alto",
+                "point": 1
+            },
+            {
+                "aswer": "Muito alto",
+                "point": 0
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "question": "Você tem problemas para dormir?",
+        "options": [
+            {
+                "aswer": "Sim",
+                "point": 0
+            },
+            {
+                "aswer": "Não",
+                "point": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "question": "Você costuma se sentir cansado durante o dia?",
+        "options": [
+            {
+                "aswer": "Sim",
+                "point": 0
+            },
+            {
+                "aswer": "Não",
+                "point": 1
+            }
+        ]
+    }
+]
